@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo a {
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: greenyellow;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            margin-right: 5px;
+            font: bold 20px/50px Arial
+        }
+        /* 存在id的元素 a[id]*/
+        /* a[id="fifth"]{
+            background-color: aqua;
+        } */
+         /* 存在class位links的元素 */
+         a[class*="links"]{
+            background-color: aqua;
+         }
+    </style>
+</head>
+<body>
+    <p class="demo">
+        <a href="https://www.baidu.com" class="links item first" id="first">1</a>
+        <a href="#" class="links item active" target="_blank" title="test" id="second">2</a>
+        <a>3</a>
+        <a>4</a>
+        <a id="fifth">5</a>
+        <a>6</a>
+        <a>7</a>
+        <a>8</a>
+        <a>9</a>
+    </p>
+</body>
+</html>
